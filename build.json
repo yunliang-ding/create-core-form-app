@@ -1,0 +1,52 @@
+{
+  "vite": false,
+  "externals": {
+    "react": "window.React",
+    "react-dom": "window.ReactDOM"
+  },
+  "router": {
+    "ignorePaths": [
+      "schema",
+      "component",
+      "components"
+    ]
+  },
+  "plugins": [
+    "./build.plugins.schema.ts",
+    [
+      "build-plugin-antd",
+      {
+        "themeConfig": {
+          "@primary-background-color": "#4e61d4",
+          "@text-color": "#6a6a6a",
+          "@font-size-base": "14px",
+          "@font-size-small": "12px",
+          "@primary-color": "#4e61d4"
+        }
+      }
+    ],
+    [
+      "build-plugin-moment-locales",
+      {
+        "locales": [
+          "zh-cn"
+        ]
+      }
+    ],
+    [
+      "build-plugin-load-assets",
+      {
+        "assets": {
+          "start": [
+            "https://g.alicdn.com/code/lib/react/17.0.2/umd/react.development.min.js",
+            "https://g.alicdn.com/code/lib/react-dom/17.0.2/umd/react-dom.development.min.js"
+          ],
+          "build": [
+            "https://g.alicdn.com/code/lib/react/17.0.2/umd/react.production.min.js",
+            "https://g.alicdn.com/code/lib/react-dom/17.0.2/umd/react-dom.production.min.js"
+          ]
+        }
+      }
+    ]
+  ]
+}

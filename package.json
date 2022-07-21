@@ -1,0 +1,44 @@
+{
+  "name": "create-core-form-app",
+  "version": "0.0.1",
+  "description": "基础模版",
+  "dependencies": {
+    "react-core-form": "0.0.2",
+    "@ant-design/icons": "^4.0.2",
+    "@ant-design/pro-card": "1.16.2",
+    "@ant-design/pro-layout": "6.20.0",
+    "@ant-design/pro-skeleton": "1.0.1",
+    "antd": "4.21.5",
+    "html2canvas": "1.3.2",
+    "lodash": "4.17.21",
+    "moment": "^2.24.0",
+    "qs": "6.10.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-to-print": "2.13.0",
+    "xlsx": "^0.16.9"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "9.0.13",
+    "@commitlint/cli": "^12.1.4",
+    "@iceworks/spec": "^1.0.1",
+    "@types/react": "^17.0.14",
+    "@types/react-dom": "^17.0.9",
+    "build-plugin-antd": "^0.1.2",
+    "build-plugin-load-assets": "0.1.3",
+    "build-plugin-moment-locales": "^0.1.0",
+    "eslint": "^7.30.0",
+    "ice.js": "^2.0.0",
+    "stylelint": "^13.1.0"
+  },
+  "scripts": {
+    "mock": "icejs start --mode mock",
+    "dev": "icejs start --mode dev",
+    "start": "icejs start --mode local",
+    "build:daily": "icejs build --mode daily",
+    "build": "icejs build --mode prod",
+    "lint": "npm run eslint && npm run stylelint",
+    "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./",
+    "stylelint": "stylelint ./**/*.scss"
+  }
+}

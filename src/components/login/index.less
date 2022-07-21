@@ -1,0 +1,38 @@
+.app-login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  &-left {
+    background-color: #f5f8fb;
+    width: calc(100% - 600px);
+    height: 100%;
+  }
+  &-right {
+    width: 600px;
+    height: 100%;
+    background-color: #5f6bdb;
+    display: flex;
+    align-items: center;
+    position: relative;
+    &-contianer {
+      border-radius: 4px;
+      width: 420px;
+      height: 490px;
+      background-color: #fff;
+      position: absolute;
+      left: 0;
+      top: 130px;
+      transform: translate(-50%);
+      box-shadow: 0 10px 20px 0px #0000000d;
+      padding: 20px 40px;
+      h2 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .ant-btn {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+  }
+}
