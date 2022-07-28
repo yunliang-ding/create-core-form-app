@@ -22,3 +22,4 @@ yarn-debug.log*
 yarn-error.log*
 index.module.scss.d.ts
 .vscode/settings.json
+.gitpod.yml

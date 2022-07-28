@@ -46,10 +46,13 @@ export default (): TableProps => {
       await new Promise((res) => setTimeout(res, 1000));
       return {
         success: true,
-        total: 1,
+        total: 2,
         list: [
           {
             name: '测试001',
+          },
+          {
+            name: '测试002',
           },
         ],
       };

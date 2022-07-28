@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "基础模版",
   "dependencies": {
-    "react-core-form": "0.0.2",
+    "react-core-form": "0.0.4",
     "@ant-design/icons": "^4.0.2",
     "@ant-design/pro-card": "1.16.2",
     "@ant-design/pro-layout": "6.20.0",
@@ -32,9 +32,8 @@
     "stylelint": "^13.1.0"
   },
   "scripts": {
-    "mock": "icejs start --mode mock",
-    "dev": "icejs start --mode dev",
-    "start": "icejs start --mode local",
+    "mock": "icejs start --disable-open --mode mock",
+    "start": "icejs start --disable-open --mode local",
     "build:daily": "icejs build --mode daily",
     "build": "icejs build --mode prod",
     "lint": "npm run eslint && npm run stylelint",
