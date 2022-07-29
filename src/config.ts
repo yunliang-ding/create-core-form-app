@@ -1,9 +1,9 @@
 export default {
   mock: {
-    baseURL: 'https://3333-yunliangdin-createcoref-88606m1k583.ws-us54.gitpod.io',
+    baseURL: `http://localhost:${process.env.SERVER_PORT}`,
   },
   local: {
-    baseURL: 'http://127.0.0.1:7001',
+    baseURL: 'https://3333-yunliangdin-createcoref-88606m1k583.ws-us54.gitpod.io',
   },
   daily: {
     baseURL: location.origin,

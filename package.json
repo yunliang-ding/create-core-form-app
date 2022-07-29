@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "基础模版",
   "dependencies": {
-    "react-core-form": "0.0.4",
+    "react-core-form": "0.0.5",
     "@ant-design/icons": "^4.0.2",
     "@ant-design/pro-card": "1.16.2",
     "@ant-design/pro-layout": "6.20.0",
